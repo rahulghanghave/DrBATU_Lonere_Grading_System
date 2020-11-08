@@ -1,0 +1,159 @@
+package Dr_BATU_Lonere_Greading_System;
+
+import java.util.Scanner;
+
+public class DrBATU_Greading_System 
+{
+	public static void main(String[] args) 
+	{
+		float sgpa1,sgpa2,sgpa3,sgpa4,sgpa5,sgpa6,sgpa7,sgpa8;
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Select following options:");
+		System.out.println("A.Claculate Acording to number of SEMS");
+		System.out.println("B.Convert CGPA to Percentage");
+		int choice1 = sc.next().charAt(0);
+		
+		switch(choice1)
+		{
+			case 'A':		System.out.println("Enter the number of SEMS:");
+							int choice = sc.nextInt();
+							
+							switch(choice)
+								{
+									case 1: System.out.println("SGPA fo sem1");
+											System.out.println("===Enter The SGPA===");
+											System.out.print("Sem-I=");
+											sgpa1 = sc.nextFloat();
+											System.out.println("My CGPA:"+(sgpa1/10)*10);
+											break;
+					
+									case 2: System.out.println("CGPA for two sems");
+											System.out.println("===Enter The SGPA===");
+											System.out.print("Sem-I=");
+											sgpa1 = sc.nextFloat();
+											System.out.print("Sem-II=");
+											sgpa2 = sc.nextFloat();
+											System.out.println("My CGPA:"+((sgpa1+sgpa2)/20)*10);
+											break;
+					
+									case 3: System.out.println("CGPA for two sems");
+											System.out.println("===Enter The SGPA===");
+											System.out.print("Sem-I=");
+											sgpa1 = sc.nextFloat();
+											System.out.print("Sem-II=");
+											sgpa2 = sc.nextFloat();
+											System.out.print("Sem-III=");
+											sgpa3 = sc.nextFloat();
+											System.out.println("My CGPA:"+((sgpa1+sgpa2+sgpa3)/30)*10);
+											break;
+					
+					
+									case 4: System.out.println("CGPA for two sems");
+											System.out.println("===Enter The SGPA===");
+											System.out.print("Sem-I=");
+											sgpa1 = sc.nextFloat();
+											System.out.print("Sem-II=");
+											sgpa2 = sc.nextFloat();
+											System.out.print("Sem-III=");
+											sgpa3 = sc.nextFloat();
+											System.out.print("Sem-IV=");
+											sgpa4 = sc.nextFloat();
+											System.out.println("My CGPA:"+((sgpa1+sgpa2+
+											sgpa3+sgpa4)/40)*10);
+											break;
+					
+									case 5: System.out.println("CGPA for two sems");
+											System.out.println("===Enter The SGPA===");
+											System.out.print("Sem-I=");
+											sgpa1 = sc.nextFloat();
+											System.out.print("Sem-II=");
+											sgpa2 = sc.nextFloat();
+											System.out.print("Sem-III=");
+											sgpa3 = sc.nextFloat();
+											System.out.print("Sem-IV=");
+											sgpa4 = sc.nextFloat();
+											System.out.print("Sem-V=");
+											sgpa5 = sc.nextFloat();
+											System.out.println("My CGPA:"+((sgpa1+sgpa2+sgpa3+
+													sgpa4+sgpa5)/50)*10);
+											break;
+					
+									case 6: System.out.println("CGPA for two sems");
+											System.out.println("===Enter The SGPA===");
+											System.out.print("Sem-I=");
+											sgpa1 = sc.nextFloat();
+											System.out.print("Sem-II=");
+											sgpa2 = sc.nextFloat();
+											System.out.print("Sem-III=");
+											sgpa3 = sc.nextFloat();
+											System.out.print("Sem-IV=");
+											sgpa4 = sc.nextFloat();
+											System.out.print("Sem-V=");
+											sgpa5 = sc.nextFloat();
+											System.out.print("Sem-VI=");
+											sgpa6 = sc.nextFloat();
+											System.out.println("My CGPA:"+((sgpa1+sgpa2+sgpa3+
+													sgpa4+sgpa5+sgpa6)/60)*10);
+											break;
+			
+			
+									case 7: System.out.println("CGPA for two sems");
+											System.out.println("===Enter The SGPA===");
+											System.out.print("Sem-I=");
+											sgpa1 = sc.nextFloat();
+											System.out.print("Sem-II=");
+											sgpa2 = sc.nextFloat();
+											System.out.print("Sem-III=");
+											sgpa3 = sc.nextFloat();
+											System.out.print("Sem-IV=");
+											sgpa4 = sc.nextFloat();
+											System.out.print("Sem-V=");
+											sgpa5 = sc.nextFloat();
+											System.out.print("Sem-VI=");
+											sgpa6 = sc.nextFloat();
+											System.out.print("Sem-VII=");
+											sgpa7 = sc.nextFloat();
+											System.out.println("My CGPA:"+((sgpa1+sgpa2+sgpa3+sgpa4+
+													sgpa5+sgpa6+sgpa7)/70)*10);
+											break;
+			
+			
+									case 8: System.out.println("CGPA for two sems");
+											System.out.println("===Enter The SGPA===");
+											System.out.print("Sem-I=");
+											sgpa1 = sc.nextFloat();
+											System.out.print("Sem-II=");
+											sgpa2 = sc.nextFloat();
+											System.out.print("Sem-III=");
+											sgpa3 = sc.nextFloat();
+											System.out.print("Sem-IV=");
+											sgpa4 = sc.nextFloat();
+											System.out.print("Sem-V=");
+											sgpa5 = sc.nextFloat();
+											System.out.print("Sem-VI=");
+											sgpa6 = sc.nextFloat();
+											System.out.print("Sem-VII=");
+											sgpa7 = sc.nextFloat();
+											System.out.print("Sem-VIII=");
+											sgpa8 = sc.nextFloat();
+											System.out.println("My CGPA:"+((sgpa1+sgpa2+sgpa3+sgpa4+sgpa5+
+													sgpa6+sgpa7+sgpa8)/80)*10);
+											break;
+			
+									default : System.out.println("Invalid choice");
+								}
+							break;
+						
+			case 'B': 	System.out.println("=====Convert your CGPA into percentage====");
+						System.out.println("Enter your CGPA:");
+						float CGPA = sc.nextFloat();
+						System.out.println("Your total Percentage is:"+(CGPA*10));
+						break;
+						
+			default : System.out.println("Invalid choice");			
+						
+		}
+		sc.close();
+		}	
+	}
